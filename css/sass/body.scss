@@ -1,0 +1,149 @@
+#all {padding-top: 60px;}
+
+#home-image {
+	background-color: darken($purple, 5%);
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #fff;
+
+	h1 {
+		padding: 3% 0% 1%;
+		text-transform: uppercase;
+		color: #fff;
+		vertical-align: middle;
+	}
+
+	p {
+		width: 60%;
+		height: auto;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1.4% 0% 3%;
+	}
+
+	a[data-icon="octicon-star"] {
+		margin-right: 5px;
+	}
+
+	div {
+		padding-bottom: 5%;
+	}
+}
+
+#tell {
+	width: 100%;
+	height: auto;
+	background-color: $blue;
+
+	a {
+		text-align: center;
+
+		h1 {
+			color: #fff;
+			padding: 3% 0% 1%;
+		}
+	}
+
+	form {
+		width: 70%;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		padding-bottom: 3%;
+
+		input, textarea {
+			width: 100%;
+			max-width: 100%;
+			font-weight: bold;
+			color: #fff;
+			display: block;
+			height: auto;
+			box-sizing: border-box;
+			margin: 10px 0px;
+			padding: 13px 10px;
+			background-color: rgba(255,255,255,0.1);
+			border: none;
+		}
+
+		textarea {
+			max-height: 900px;
+		}
+	}
+}
+
+#others-histories {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding-bottom: 3%;
+	background-color: darken($purple, 3%);
+
+	header {
+		text-align: center;
+		color: #fff;
+
+		h2 {
+			color: #fff;
+			padding: 3% 0% 1%;
+		}
+
+		ul li {
+			display: inline-block;
+			padding: 12px 9px;
+			cursor: pointer;
+
+			&:hover {background-color: rgba(0,0,0,0.6);}
+		}
+	}
+
+	article {
+		width: 90%;
+		height: auto;
+		margin-top: 1%;
+		margin-right: auto;
+		margin-left: auto;
+		background-color: rgba(0,0,0,0.5);
+		box-sizing: border-box;
+
+		h3 {
+			color: #fff;
+			padding: 15px;
+		}
+
+		p {
+			padding: 0px 15px;
+			font-size: 13px;
+			color: #fff;
+		}
+
+		button {
+			color: $pink;
+			width: auto;
+			height: auto;
+			background-color: darken($purple, 5%);
+			text-transform: uppercase;
+			font-weight: bold;
+			border: none;
+			box-sizing: border-box;
+			padding: 7px;
+			margin: 15px;
+			right: 0;
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: $blue;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 0px;
+
+	span {
+	}
+}
