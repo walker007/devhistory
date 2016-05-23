@@ -1,0 +1,145 @@
+#home-image {
+	background: url(/img/backa.jpg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	color: #fff;
+
+	h1 {
+		padding: 6% 0% 1%;
+		text-transform: uppercase;
+		color: #fff;
+		vertical-align: middle;
+	}
+
+	p {
+		width: 60%;
+		height: auto;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 1.4% 0% 3%;
+	}
+
+	a[data-icon="octicon-star"] {
+		margin-right: 5px;
+	}
+
+	div {
+		padding-bottom: 5%;
+	}
+}
+
+#whats {
+	width: 100%;
+	height: auto;
+	background-color: white;
+	padding-bottom: 3%;
+
+	h1 {
+		text-align: center;
+		padding: 3% 0% 1%;
+	}
+
+	p {
+		width: 90%;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+#tell {
+	width: 100%;
+	height: auto;
+	background-color: $blue;
+	padding-bottom: 3%;
+
+	h1 {
+		color: #fff;
+		text-align: center;
+		padding: 3% 0% 1%;
+	}
+
+	p {
+		color: #fff;
+		width: 90%;
+		height: auto;
+		margin-right: auto;
+		margin-left: auto;
+		text-align: center;
+		font-size: 15px;
+	}
+}
+
+#others-histories {
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	padding-bottom: 3%;
+	background-color: white;
+
+	h2 {
+		text-align: center;
+		padding: 3% 0% 1%;
+	}
+
+	> section {
+		display: flex;
+		justify-content: space-between;
+
+		article {
+			margin: 1% 2% 0%;
+			flex-direction: column;
+			flex-wrap: wrap;
+			background-color: rgba(0,0,0,0.1);
+			box-sizing: border-box;
+
+			h3 {
+				color: $blue;
+				padding: 15px;
+			}
+
+			p {
+				padding: 0px 15px;
+				font-size: 13px;
+				color: $blue;
+			}
+
+			a {
+				button {
+					color: white;
+					width: auto;
+					height: auto;
+					background-color: $blue;
+					text-transform: uppercase;
+					font-weight: bold;
+					border: none;
+					box-sizing: border-box;
+					padding: 7px;
+					margin: 15px;
+				}
+			}
+
+			&:first-child {margin-right: 1%;}
+			&:last-child {margin-left: 1%;}
+		}
+	}
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: $blue;
+	font-size: 14px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 0px;
+
+	span {
+	}
+}
