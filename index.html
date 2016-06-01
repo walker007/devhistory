@@ -21,7 +21,8 @@ layout: default
     <h1>O que é isto? <span>▼</span></h1>
     
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, minus, nesciunt. Reprehenderit fuga minus blanditiis at fugiat quasi facilis quisquam veritatis laborum eos cum corporis quae odio laudantium ut similique, labore quia. Iusto itaque eius nobis, fuga, molestias impedit tempora! Quod eaque ut voluptate eligendi suscipit dolores minima a numquam eveniet odit maxime voluptates mollitia accusamus libero dignissimos minus animi perspiciatis fugiat molestias quis, quam optio rem soluta sunt. Quis laboriosam rem quibusdam nemo consequuntur non nam, quo quos ex!
+      É praticamente um serviço web, feito para nós desenvolvedores, contarmos nossas histórias!
+      Afinal de contas, todo mundo tem uma bela história pra contar, seja ela fictícia ou não, né? Então, se você é um desenvolvedor e quer publicar alguma história aqui, siga os passos abaixo, é rapidinho! 
     </p>
   </section>
 
@@ -29,34 +30,27 @@ layout: default
     <h1>Publicando sua história <span>▼</span></h1>
     
     <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, minus, nesciunt. Reprehenderit fuga minus blanditiis at fugiat quasi facilis quisquam veritatis laborum eos cum corporis quae odio laudantium ut similique, labore quia. Iusto itaque eius nobis, fuga, molestias impedit tempora! Quod eaque ut voluptate eligendi suscipit dolores minima a numquam eveniet odit maxime voluptates mollitia accusamus libero dignissimos minus animi perspiciatis fugiat molestias quis, quam optio rem soluta sunt. Quis laboriosam rem quibusdam nemo consequuntur non nam, quo quos ex!
+      Para publicar sua história é bem fácil! Você só precisa criar um novo arquivo dentro da pasta <span class="bold">_posts</span> no formato <span class="bold">markdown</span>. Temos um arquivo de <a href="http://www.pineb.com.br/example" class="bold">exemplo</a>, pra você acompanhar! Se você quiser aprimorar algo ou acrescentar, fique à vontade!
     </p>
   </section>
 
+  
+
   <section id="others-histories">
-    <h2>Histories</h2>
+    <h2>Histórias</h2>
 
     <section>
+      {% for post in site.posts %}
       <article>
-        <a href=""><h3>Title of History</h3></a>
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          <h3>{{ post.title }}</h3>
+          <h5>{{ post.author }} | {{ post.date | date: "%b %-d, %Y" }}</h5>
+        </a>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veniam, velit nisi, facere vero ad incidunt voluptatibus, officia perferendis doloribus veritatis error illum quaerat alias blanditiis voluptate. Fugiat a nemo dolorem eligendi hic minima, nihil culpa dolore, nam recusandae. Ut, nesciunt recusandae, repellat omnis, enim modi similique tenetur expedita possimus explicabo soluta perferendis! Quis non dolor repudiandae facilis possimus praesentium soluta voluptates rerum, libero! Dolor non dignissimos illum quisquam deserunt officiis, obcaecati minima, accusamus natus quas libero, incidunt quo blanditiis!
+          {{ post.excerpt | truncatewords: 35 }}
         </p>
-        <a href=""><button>continue lendo</button></a>
+        <a href="{{ post.url }}"><button>continue lendo</button></a>
       </article>
-      <article>
-        <a href=""><h3>Title of History</h3></a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veniam, velit nisi, facere vero ad incidunt voluptatibus, officia perferendis doloribus veritatis error illum quaerat alias blanditiis voluptate. Fugiat a nemo dolorem eligendi hic minima, nihil culpa dolore, nam recusandae. Ut, nesciunt recusandae, repellat omnis, enim modi similique tenetur expedita possimus explicabo soluta perferendis! Quis non dolor repudiandae facilis possimus praesentium soluta voluptates rerum, libero! Dolor non dignissimos illum quisquam deserunt officiis, obcaecati minima, accusamus natus quas libero, incidunt quo blanditiis!
-        </p>
-        <a href=""><button>continue lendo</button></a>
-      </article>
-      <article>
-        <a href=""><h3>Title of History</h3></a>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor veniam, velit nisi, facere vero ad incidunt voluptatibus, officia perferendis doloribus veritatis error illum quaerat alias blanditiis voluptate. Fugiat a nemo dolorem eligendi hic minima, nihil culpa dolore, nam recusandae. Ut, nesciunt recusandae, repellat omnis, enim modi similique tenetur expedita possimus explicabo soluta perferendis! Quis non dolor repudiandae facilis possimus praesentium soluta voluptates rerum, libero! Dolor non dignissimos illum quisquam deserunt officiis, obcaecati minima, accusamus natus quas libero, incidunt quo blanditiis!
-        </p>
-        <a href=""><button>continue lendo</button></a>
-      </article>
+      {% endfor %}
     </section>
   </section>

@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Todo mundo tem histórias pra contar, principalmente os desenvolvedores! 
   Então, se você é um desenvolvedor(iniciante ou expert), conte-nos sua história! Hahaha
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http:///devhistory" # the base hostname & protocol for your site
+url: "http://www.pineb.com.br/devhistory" # the base hostname & protocol for your site
 twitter_username: devhernandes
 github_username:  devhernandes
 
