@@ -49,7 +49,7 @@ layout: default
         <p>
           {{ post.excerpt | truncatewords: 35 }}
         </p>
-        <a href="{{ post.url }}"><button>continue lendo</button></a>
+        <a href="{{ post.url | prepend: site.baseurl }}"><button>continue lendo</button></a>
       </article>
       {% endfor %}
     </section>
